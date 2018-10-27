@@ -1,0 +1,82 @@
+body{
+	background-color: #f4f4f4;
+}
+
+a, p, h4, span, li, button, input, select, textarea{
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.bg_none{
+background:none;	
+}
+
+
+/** top bar header style start **/
+.topbar_header{
+	background-color: #323232;
+}
+
+.topbar_header .avtaar{
+	width: 22px;
+}
+
+.topbar_header ul.top_center_link li a{
+	font-size: 14px;
+}
+/** top bar header style End **/
+
+
+/** main menu header style start **/
+.mainMenu_wrapper{		background: #9674c8;
+}
+
+.mainMenu_wrapper ul li a{
+    font-size: 15px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    -webkit-transition: color .12s ease-in-out;
+    transition: color .12s ease-in-out;
+}
+
+.mainMenu_wrapper ul li a.active{		color: #9674c8 !important;		background-color: #fff !important;
+}
+
+.search_option {
+    position: relative;
+    margin-top: -8px;
+}
+
+.search_option button{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    color: rebeccapurple;
+    font-size: 20px;
+}
+/** main menu header style end **/
+
+
+
+/** Sub menu style start **/
+.subMenu_wrapper{
+	background:#fff;
+}
+
+.subMenu_wrapper ul.subMenu_ul > li a{
+	font-size: 14px;
+}
+
+.subMenu_wrapper ul.subMenu_ul > li > a{	
+	text-align: center;
+	color: gray;
+	-webkit-transition: color .12s ease-in-out;
+	transition: color .12s ease-in-out;
+	display: block;
+	margin: 0 10px 0 10px;
+}
+/** Sub menu style End **/
