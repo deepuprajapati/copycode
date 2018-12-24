@@ -50,19 +50,13 @@
             <div class="navbar pt-2 pb-0">
                 <div class="container-fluid">
                     <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                        <li class="nav-item"><a class="nav-link active border-0" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true"><i class="fas fa-globe"></i> Web Component</a> </li>
-                        <li class="nav-item"><a class="nav-link border-0" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false"><i class="fal fa-plug"></i> Plugin</a> </li>
+                        <li class="nav-item"><a class="nav-link active border-0" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="false"><i class="fas fa-home"></i> Dashboard</a> </li>
+                        <li class="nav-item"><a class="nav-link border-0" id="webcomponent-tab" data-toggle="tab" href="#webcomponent" role="tab" aria-controls="webcomponent" aria-selected="true"><i class="fas fa-globe"></i> Web Component</a> </li>
+                        <li class="nav-item"><a class="nav-link border-0" id="plugin-tab" data-toggle="tab" href="#plugin" role="tab" aria-controls="plugin" aria-selected="false"><i class="fal fa-plug"></i> Plugin</a> </li>
+                        <li class="nav-item"><a class="nav-link border-0" id="updates-tab" data-toggle="tab" href="#updates" role="tab" aria-controls="updates" aria-selected="false"><i class="far fa-pen-alt"></i> Web update</a> </li>
                         <li class="nav-item"><a class="nav-link border-0" id="version-tab" data-toggle="tab" href="#version" role="tab" aria-controls="version" aria-selected="false"><i class="fal fa-code-merge"></i> Version</a> </li>
-                        <!--<li class="nav-item"><a class="nav-link border-0" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">Javascript & jQuery</a> </li>
-                        <li class="nav-item"><a class="nav-link border-0" id="css3-tab" data-toggle="tab" href="#css3" role="tab" aria-controls="css3" aria-selected="false">Css3</a> </li>
-                        <li class="nav-item"><a class="nav-link border-0" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">jQuery</a> </li>-->
+                        <li class="nav-item"><a class="nav-link border-0" id="cdn-tab" data-toggle="tab" href="#cdn" role="tab" aria-controls="cdn" aria-selected="false"><i class="fal fa-code-merge"></i> CDN</a> </li>
                     </ul>
-                    <form class="form-inline ml-auto">
-						<div class="search_option">
-							<input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
-							<button class="border-0 bg_none" type="submit"><i class="fal fa-search"></i></button>
-						</div>	
-					</form>
                 </div>
             </div>
         </div>
@@ -70,37 +64,82 @@
             <div class="container-fluid">
                 <div class="navbar p-0">
                     <div class="tab-content" style="width:100%;">
-                        <div class="tab-pane active" id="html" role="tabpanel" aria-labelledby="html-tab">
+                        <div class="tab-pane active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                             <nav class="navbar navbar-expand-lg pt-0 pb-0">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav subMenu_ul">
-                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown link <i class="fal fa-angle-down"></i></a>
+                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dashboard</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a></div>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
                                         </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
-                        <div class="tab-pane" id="css3" role="tabpanel" aria-labelledby="css3-tab">
+                        <div class="tab-pane" id="webcomponent" role="tabpanel" aria-labelledby="webcomponent-tab">
                             <nav class="navbar navbar-expand-lg pt-0 pb-0">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav subMenu_ul">
-                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> csss</a>
+                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> HTML <i class="fal fa-angle-down"></i></a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a></div>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+                                        </li>
+                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> jQeury <i class="fal fa-angle-down"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>    
+						<div class="tab-pane" id="plugin" role="tabpanel" aria-labelledby="plugin-tab">
+                            <nav class="navbar navbar-expand-lg pt-0 pb-0">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav subMenu_ul">
+                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Slider <i class="fal fa-angle-down"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+                                        </li>
+                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tabs <i class="fal fa-angle-down"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
                                         </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
-                        <div class="tab-pane" id="js" role="tabpanel" aria-labelledby="js-tab">
+						<div class="tab-pane" id="updates" role="tabpanel" aria-labelledby="updates-tab">
                             <nav class="navbar navbar-expand-lg pt-0 pb-0">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav subMenu_ul">
-                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Javascript</a>
+                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Web news <i class="fal fa-angle-down"></i></a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a></div>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+                                        </li>
+                                        <li class="nav-item dropdown"><a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Web news <i class="fal fa-angle-down"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -110,9 +149,12 @@
                             <nav class="navbar navbar-expand-lg pt-0 pb-0">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav subMenu_ul">
-                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Angular</a>
+                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> JS Framework</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a></div>
+												<a class="dropdown-item" href="#">Angular</a>
+												<a class="dropdown-item" href="#">Reactjs</a>
+												<a class="dropdown-item" href="#">Vuejs</a>
+											</div>
                                         </li>
                                         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Reactjs</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -126,11 +168,51 @@
                                 </div>
                             </nav>
                         </div>
+
+                        <div class="tab-pane" id="cdn" role="tabpanel" aria-labelledby="cdn-tab">
+                            <nav class="navbar navbar-expand-lg pt-0 pb-0">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav subMenu_ul">
+                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Bootstrap</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+												<a class="dropdown-item" href="#">Angular</a>
+												<a class="dropdown-item" href="#">Reactjs</a>
+												<a class="dropdown-item" href="#">Vuejs</a>
+											</div>
+                                        </li>
+                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Angular Bootstrap</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a></div>
+                                        </li>
+                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Jquery</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+	
+	<section>
+		<div class="container-fluid">
+			<div class="col-md-12">
+				<div class="mt-3">
+				
+				<div class="row">
+					<div class="col-md-3">df</div>
+					<div class="col-md-9">gfhf</div>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	<section>
+	
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
